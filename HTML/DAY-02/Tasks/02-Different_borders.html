@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diff Borders</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: separate; /* Ensure border-spacing works */
+        border-spacing: 50px;
+      }
+      th,
+      td {
+        border: 5px solid black;
+        width: 100px;
+        height: 100px;
+        border-color: rgb(141, 211, 34);
+      }
+      .rect1 {
+        border-radius: 10px;
+      }
+      .rect2 {
+        border-radius: 15px;
+      }
+      .rect3 {
+        border-radius: 5px;
+      }
+      .round1 {
+        border-radius: 25px;
+      }
+      .oval {
+        border-radius: 50% 50% 50% 50%;
+      }
+      .opp {
+        border-radius: 5px 25% 5px 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="rect1"></td>
+        <td class="rect2"></td>
+        <td class="round1"></td>
+      </tr>
+      <tr>
+        <td class="rect2"></td>
+        <td class="rect3"></td>
+        <td class="round1"></td>
+      </tr>
+      <tr>
+        <td class="oval"></td>
+        <td class="rect1"></td>
+        <td class="opp"></td>
+      </tr>
+    </table>
+  </body>
+</html>
